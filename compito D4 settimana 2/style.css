@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+/* Header */
+
+
+header {
+    box-shadow: 0px 0px 10px 0px #d8d8d8;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin: 0% 10%;
+}
+
+#header > img{
+    width: 150px;
+    height: 90px;
+}
+
+
+.posts_area{
+    margin: 30px;
+}
+
+#account_area {
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2px;
+}
+
+#account_area i {
+    font-size: 13px;
+    color: #3f3f3f;
+}
+
+#membership p {
+    color: rgb(90, 90, 90);
+    font-size: 13pt;
+    padding: 8px 12px;
+    border: solid 2px #c2c2c2;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+#account p {
+    padding: 9px 15px;
+    color: white;
+    font-size: 15pt;
+    background-color: #f4511e;
+    border-radius: 50%;
+}
+
+/* Articoli */
+
+main {
+    display: flex;
+}
+
+#posts_area {
+    position: relative;
+    width: 55vw;
+    margin-left: 10vw;
+    padding-right: 5vw;
+    border-right: solid 2px #e8e8e8;
+}
+
+/* Barra superiore */
+
+#top_bar {
+    margin-top: 2vh;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 2px #e8e8e8;
+    background-color: white;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#top_bar:before {
+    content: "";
+    display: inline-block;
+    width: 205px;
+    position: absolute;
+    border-bottom: solid 2px black;
+    margin-left: 120px;
+    padding: 0 0 29px 0;
+    z-index: 9;
+}
+
+#top_bar p {
+    color: #848484;
+    margin: 0 30px 0 5px;
+}
+
+#top_bar p:last-child {
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 900;
+}
+
+/* Preview articoli */
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    height: 250px;
+}
+
+.prev_art {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+}
+
+.credits > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align:left;
+    font-weight: 900;
+}
+
+.prev_art > p {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #848484;
+}
+
+.prev_art > div {
+    margin-top: 10px;
+}
+
+span {
+    color: #848484;
+}
+
+.date_share {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date span {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.date {
+    display: flex;
+    color: #848484;
+}
+
+
+.prev_img {
+    min-width: 250px;
+    min-height: 180px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.prev_img img {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Barra destra */
+
+@media screen and (max-width: 1921px) {
+
+}
+    #right_bar {
+    height: 1700px;
+    position: sticky;
+    top: -82vh;
+    width: 25vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    }
+
+
+/* Twitter section */
+
+#twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    padding: 50px;
+    border-bottom: solid 2px #e8e8e8;
+}
+
+#twitter p {
+    font-size: 15pt;
+    color: #545454;
+}
+
+#twitter > p:nth-child(2) {
+    font-size: 18pt;
+}
+
+#connect_twitter {
+    border: solid 2px #c2c2c2;
+    border-radius: 50px;
+    padding: 15px 60px 15px 25px;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+}
+
+#twitter > img {
+    width: 200px;
+}
+
+#connect_twitter > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#later {
+    text-decoration: underline;
+}
+
+/* Recommended topics */
+
+h3 {
+    font-size: 18pt;
+}
+
+#recommended_t {
+    padding: 50px 0px;
+    height: 350px;
+
+}
+
+#recc_p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recommended_t p {
+    font-size: 15pt;
+    color: #545454;
+    padding: 10px 20px;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+    margin: 20px 20px 0 0;
+}
+
+/* Who to follow */
+
+#to_follow {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.accounts {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.accounts img {
+    margin-right: 15px;
+}
+
+.follow_artists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_logo {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.artist_name {
+    font-size: 15pt;
+    font-weight: 900;
+}
+
+.artist_des {
+    color: #848484;
+}
+
+.follow_artists > p {
+    font-size: 15pt;
+    font-weight: 500;
+    color: #3f3f3f;
+    border: solid 2px #c2c2c2;
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+}
+
+/* Recently saved */
+
+#saved {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+    margin-bottom: 70px;
+}
+
+.saved_elements {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.saved_elements > p {
+    margin-top: 12px;
+    font-size: 15pt;
+    font-weight: 900;
+}
+
+.saved_elements > div {
+    margin-top: 12px;
+}
+
+.date i {
+    margin-left: 10px;
+}
+
+#see_all {
+    color: green;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 15pt;
+    color: #545454;
+    padding: 10px 40px 0px 0px;
+}
