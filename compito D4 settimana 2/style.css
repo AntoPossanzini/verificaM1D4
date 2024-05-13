@@ -96,7 +96,7 @@ main {
 #top_bar:before {
     content: "";
     display: inline-block;
-    width: 205px;
+    width: 400px;
     position: absolute;
     border-bottom: solid 2px black;
     margin-left: 120px;
